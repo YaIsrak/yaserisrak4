@@ -1,0 +1,138 @@
+.section1 {
+  padding: 15vmin 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section1 .container .row .col-md-6 img {
+  width: 100%;
+}
+
+.section1 .container .row .col-md-6 .intro {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.section1 .container .row .col-md-6 .intro h1 {
+  font-weight: 600;
+}
+
+.section1 .container .row .col-md-6 .intro p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+.section1 .container .row .col-md-6 .intro .more-btn {
+  color: white;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  font-weight: 600;
+  padding: 1vmin 3vmin;
+  letter-spacing: 5px;
+  font-size: 2vmin;
+  margin: 5vmin 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section1 .container .row .col-md-6 .intro .more-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.section1 .container .row .col-md-6 .intro .more-btn:hover {
+  background-color: #d90d4f;
+  padding: 1vmin 5vmin;
+}
+
+.section2 {
+  padding: 15vmin 0;
+}
+
+.section3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section3 .container-fluid .row .col-md-4 {
+  padding: 10vmin 0;
+}
+
+.section3 .container-fluid .row .col-md-4 img {
+  width: 100%;
+}
+
+.section3 .container-fluid .row .col-md-4 h1 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.section3 .container-fluid .row .col-md-4 p {
+  font-size: 15px;
+}
+
+.section3 .container-fluid .row .first {
+  background-color: #606060;
+}
+
+.section3 .container-fluid .row .first h1 {
+  color: black;
+}
+
+.section3 .container-fluid .row .first p {
+  color: white;
+}
+
+.section3 .container-fluid .row .second {
+  background-color: #efefef;
+}
+
+.section3 .container-fluid .row .second h1 {
+  color: #d90d4f;
+}
+
+.section3 .container-fluid .row .second p {
+  color: black;
+}
+
+.section3 .container-fluid .row .third {
+  background-color: #d90d4f;
+}
+
+.section3 .container-fluid .row .third h1 {
+  color: white;
+}
+
+.section3 .container-fluid .row .third p {
+  color: black;
+}
+
+.section5 {
+  padding: 15vmin 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section5 .container h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section5 .container .row .col-md-6 .hover-box img {
+  height: 15vh;
+}
+
+.section5 .container .row .col-md-6 p {
+  padding: 2vmin 0;
+}
+
+@media screen and (max-width: 450px) {
+  .intro {
+    padding: 25px;
+  }
+  .section1, .section2 {
+    padding: 15vmin 2vmin;
+  }
+}
+/*# sourceMappingURL=about.css.map */
