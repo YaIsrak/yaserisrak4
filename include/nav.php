@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-  <a class="navbar-brand" href="index.php">Israk</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="index.html">Israk</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <svg class="ham ham6" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
             <path
                   class="line top"
@@ -12,26 +12,26 @@
             <path
                   class="line bottom"
                   d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
-          </svg>   
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <div class="mr-auto"></div>
-    <div class="navbar-nav">
-        <a href="index.php" class="nav-link">Home</a>
+          </svg> 
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+      <div class="mx-auto"></div>
+      <div class="navbar-nav">
+        <a href="index.html" class="nav-link">Home</a>
         <div class="dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"   aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
               Porfolio
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="https://mdyaserarafatisrak.artstation.com/albums/2855151">Personal Art</a>
               <a class="dropdown-item" href="https://mdyaserarafatisrak.artstation.com/albums/2815097">Portrait</a>
               <a class="dropdown-item" href="https://mdyaserarafatisrak.artstation.com/albums/2855151">Character Design</a>
               <a class="dropdown-item" href="https://www.behance.net/israk">Graphic Design</a>
             </div>
         </div>
-        <a href="about.php" class="nav-link nav-item">About</a>
-        <a href="contact.php" class="nav-link nav-item">Contact</a>
+        <a href="about.html" class="nav-link nav-item">About</a>
+        <a href="contact.html" class="nav-link nav-item">Contact</a>
     </div>
-  </div>
+    </div>
   </div>
 </nav>

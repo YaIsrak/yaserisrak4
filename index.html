@@ -7,25 +7,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> -->
 <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous">
     <title>Israk</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/nav.css?v=1610173291">
-    <link rel="stylesheet" href="CSS/footer.css?v=1610173291">
-    <link rel="stylesheet" href="CSS/index.css?v=1610173291">
+    <link rel="stylesheet" href="CSS/nav.css?v=1610789125">
+    <link rel="stylesheet" href="CSS/footer.css?v=1610789125">
+    <link rel="stylesheet" href="CSS/index.css?v=1610789125">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-  <a class="navbar-brand" href="index.html">Israk</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="index.html">Israk</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <svg class="ham ham6" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
             <path
                   class="line top"
@@ -36,17 +36,17 @@
             <path
                   class="line bottom"
                   d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
-          </svg>   
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <div class="mr-auto"></div>
-    <div class="navbar-nav">
+          </svg> 
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+      <div class="mx-auto"></div>
+      <div class="navbar-nav">
         <a href="index.html" class="nav-link">Home</a>
         <div class="dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"   aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
               Porfolio
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="https://mdyaserarafatisrak.artstation.com/albums/2855151">Personal Art</a>
               <a class="dropdown-item" href="https://mdyaserarafatisrak.artstation.com/albums/2815097">Portrait</a>
               <a class="dropdown-item" href="https://mdyaserarafatisrak.artstation.com/albums/2855151">Character Design</a>
@@ -56,11 +56,11 @@
         <a href="about.html" class="nav-link nav-item">About</a>
         <a href="contact.html" class="nav-link nav-item">Contact</a>
     </div>
-  </div>
+    </div>
   </div>
 </nav>
     <section class="section1">
-    <div class="black-cover"></div>
+    <div class="black-cover top-50 start-50 translate-middle"></div>
     <div class="intro">
         <h1>ISRAK</h1>
     </div>
@@ -68,21 +68,21 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 text-center">
-                <a href="https://mdyaserarafatisrak.artstation.com/albums/2824156" class="sec2-link">Personal art</a>
                 <div class="art-img">
-                    <img src="https://cdna.artstation.com/p/assets/images/images/032/807/988/large/md-yaser-arafat-israk-asset.jpg?1607529488">
+                    <a href="https://mdyaserarafatisrak.artstation.com/albums/2824156" class="sec2-link">Personal art</a>
+                    <img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/033/872/896/large/md-yaser-arafat-israk-md-yaser-arafat-israk-asset.jpg?1610785930">
                 </div>
             </div>
             <div class="col-md-4 text-center">
-                <a href="https://mdyaserarafatisrak.artstation.com/albums/2815097" class="sec2-link">Portrait</a>
                 <div class="art-img">
-                    <img src="https://cdna.artstation.com/p/assets/images/images/032/592/954/large/md-yaser-arafat-israk-img-0586.jpg?1606895646">
+                    <a href="https://mdyaserarafatisrak.artstation.com/albums/2815097" class="sec2-link">Portrait</a>
+                    <img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/033/769/407/large/md-yaser-arafat-israk-asset.jpg?1610518760">
                 </div>
             </div>
             <div class="col-md-4 text-center">
-                <a href="https://mdyaserarafatisrak.artstation.com/albums/2855151" class="sec2-link">Character Design</a>
                 <div class="art-img">
-                    <img src="https://cdna.artstation.com/p/assets/images/images/032/560/824/large/md-yaser-arafat-israk-asset.jpg?1606810395">
+                    <a href="https://mdyaserarafatisrak.artstation.com/albums/2855151" class="sec2-link">Character Design</a>
+                    <img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/032/560/824/large/md-yaser-arafat-israk-asset.jpg?1606810395">
                 </div>
             </div>
         </div>
@@ -130,4 +130,12 @@
             Copyright ©2021 Israk . All rights reserved.
         </div>
     </div>
-</footer></body>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+--></body>

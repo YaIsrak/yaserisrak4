@@ -1,13 +1,29 @@
 .section1 {
   padding: 15vmin 0;
   font-family: 'Montserrat', sans-serif;
+  background-image: url("../pic/2.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section1 .container .row .glss {
+  padding: 5vmin;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
 }
 
 .section1 .container .row .col-md-6 img {
   width: 100%;
+  opacity: 0;
 }
 
 .section1 .container .row .col-md-6 .intro {
+  color: white;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -120,7 +136,7 @@
 }
 
 .section5 .container .row .col-md-6 .hover-box img {
-  height: 15vh;
+  width: 100%;
 }
 
 .section5 .container .row .col-md-6 p {
@@ -133,6 +149,14 @@
   }
   .section1, .section2 {
     padding: 15vmin 2vmin;
+  }
+  .section1 {
+    background-image: url("https://instagram.fcgp3-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/84980522_535750453813993_3067124462558218224_n.jpg?_nc_ht=instagram.fcgp3-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=EV3MrkuqN5wAX9aHcvJ&tp=1&oh=9f94366735639eef479cea4b2db643f0&oe=602BEDB2");
+  }
+  .section1 .container .row .col-md-6 img {
+    padding-top: 20vmin;
+    padding-bottom: 5vmin;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=about.css.map */

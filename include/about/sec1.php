@@ -4,7 +4,7 @@
             <div class="col-md-6">
                 <img src="https://instagram.fcgp3-1.fna.fbcdn.net/v/t51.2885-15/e35/118712841_171510214510702_8902140143671495046_n.jpg?_nc_ht=instagram.fcgp3-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=eHW4qBrnkscAX_dh3Xi&tp=1&oh=9226973390f2b2c3c4c921ae4b2bf4ba&oe=601B2736" alt="">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 glss">
                 <div class="intro">
                     <h1>MD Yaser Arafat Israk</h1>
                     <p>

@@ -28,10 +28,13 @@
     height: 100vh;
     width: 100%;
     .black-cover{
-        background-color: #000000;
-        opacity: 0.8;
-        height: 100vh;
-        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        backdrop-filter: blur( 7.0px );
+        -webkit-backdrop-filter: blur( 7.0px );
+        border-radius: 10px;
+        height: 90vh;
+        width: 90%;
         position: absolute;
     }
     .intro{
@@ -53,36 +56,51 @@
 // ===========================================
 .section2{
     padding: 15vmin 0;
+    background-image: url("https://i.pinimg.com/originals/13/69/37/1369372b8672cb237c50f14180661fe6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     .container{
         .row{
+            --bs-gutter-x: 0rem;
             .col-md-4{
+                margin: 10px 0;
+                // overflow: hidden;
                 &:hover .sec2-link{
                     color: #d90d4f;
 
                 }
-                .sec2-link{
-                    color: black;
-                    font-family: 'Great Vibes', cursive;
-                    font-size: 6vmin;
-                    font-weight: bold;
-                    // text-decoration: none;
-                    transition: 0.3s;
-                    &:hover{
-                        color: #d90d4f;
-                    }
-                }
                 .art-img{
+                    // height: 100%;
+                    background: rgba( 255, 255, 255, 0.25 );
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                    backdrop-filter: blur( 7.0px );
+                    -webkit-backdrop-filter: blur( 7.0px );
+                    border-radius: 10px;
+                    margin: 10px;
                     position: relative;
                     top: 50%;
                     transform: translateY(-50%);
                     transition: 0.3s;
                     overflow: hidden;
+                    .sec2-link{
+                        // background-color: red;
+                        color: white;
+                        font-family: 'Great Vibes', cursive;
+                        font-size: 6vmin;
+                        font-weight: bold;
+                        text-decoration: none;
+                        transition: 0.3s;
+                        &:hover{
+                            color: #d90d4f;
+                        }
+                    }
                     img{
-                        width: 100%;
+                        // width: 100%;
                         transition: 0.3s;
                     }
                     &:hover img{
-                        transform: scale(1.2);
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -122,13 +140,16 @@
 @media screen and (max-width: 450px) {
     .section2{
         padding: 15vmin 5vmin;
+        .col{
+            margin: 0 !important;
+        }
         img{
             width: 100%;
         }
         .sec2-link{
             font-size: 50px !important;
             position: relative;
-            top: 40px;
+            // top: 40px; 
         }
         .more-btn{
             position: relative;
