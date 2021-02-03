@@ -1,6 +1,0 @@
-<section class="section1">
-    <div class="black-cover top-50 start-50 translate-middle"></div>
-    <div class="intro">
-        <h1>ISRAK</h1>
-    </div>
-</section>

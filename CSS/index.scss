@@ -1,25 +1,5 @@
-// @mixin more-btn {
-//     color: white;
-//     background-color: black;
-//     font-family: 'Montserrat', sans-serif;
-//     border: none;
-//     font-weight: 600;
-//     padding: 1vmin 3vmin;
-//     letter-spacing: 5px;
-//     font-size: 2vmin;
-//     margin: 5vmin 0;
-//     transition: 0.3s;
-//     a{
-//         color: white;
-//         text-decoration: none;
-//     }
-//     &:hover{
-//         background-color: #d90d4f;
-//         padding: 1vmin 5vmin;
-//     }
-// }
-// section 1
-// ===========================================
+@import "nav.scss";
+
 .section1{
     background-image: url("https://instagram.fcgp3-1.fna.fbcdn.net/v/t51.2885-15/e35/81809962_138627357165836_976133959110972511_n.jpg?_nc_ht=instagram.fcgp3-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=Eq40cTB2oE4AX849Wtw&tp=1&oh=25418c49ff9d37d8cb571bdb27c9f704&oe=601A9F35");
     background-position: center;
@@ -28,10 +8,8 @@
     height: 100vh;
     width: 100%;
     .black-cover{
-        background: rgba(0, 0, 0, 0.3);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        backdrop-filter: blur( 7.0px );
-        -webkit-backdrop-filter: blur( 7.0px );
+        @include glassy;
+        background: rgba(0, 0, 0, 0.3) !important;
         border-radius: 10px;
         height: 90vh;
         width: 90%;
@@ -71,11 +49,8 @@
 
                 }
                 .art-img{
+                    @include glassy;
                     // height: 100%;
-                    background: rgba( 255, 255, 255, 0.25 );
-                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-                    backdrop-filter: blur( 7.0px );
-                    -webkit-backdrop-filter: blur( 7.0px );
                     border-radius: 10px;
                     margin: 10px;
                     position: relative;

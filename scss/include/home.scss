@@ -1,0 +1,88 @@
+@import "../custom.scss";
+
+section{
+    font-family: $font2;
+    padding: 15vmin 0;
+}
+
+// Section1
+// ==============
+.section1{
+    background-image: url("https://instagram.fcgp3-1.fna.fbcdn.net/v/t51.2885-15/e35/81809962_138627357165836_976133959110972511_n.jpg?_nc_ht=instagram.fcgp3-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=Eq40cTB2oE4AX849Wtw&tp=1&oh=25418c49ff9d37d8cb571bdb27c9f704&oe=601A9F35");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    .black-cover{
+        background: rgba(0, 0, 0, 0.3) !important;
+        border-radius: 10px;
+        height: 90vh;
+        width: 90%;
+        
+    }
+    .full-width{
+        height: 100vh !important;
+        width:100% !important;
+    }
+    .intro{
+        h1{
+            font-style: italic;
+            font-weight: 700;
+        }
+    }
+}
+
+// Section2
+// =============
+.section2{
+    background-image: url("https://i.pinimg.com/originals/13/69/37/1369372b8672cb237c50f14180661fe6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .container{
+        .row{
+            --bs-gutter-x: 0rem;
+            .col-md-4{
+                margin: 10px 0;
+                .art-img{
+                    border-radius: 10px;
+                    margin: 10px;
+                    overflow: hidden;
+                    .sec2-link{
+                        font-family: $font1;
+                        font-size: 6vmin;
+                        font-weight: bold;
+                        text-decoration: none;
+                        &:hover{
+                            color: $primary;
+                        }
+                    }
+                    &:hover img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Section3
+// =============
+.section3{
+    .container{
+        .row{
+            .col-md-6{
+                img{
+                    border-radius: 5px;
+                }
+                .info{
+                    font-family:$font2;
+                    h1{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
