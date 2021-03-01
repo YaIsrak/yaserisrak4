@@ -1,185 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Israk</title>
-    <link rel="stylesheet" href="scss/custom.css">
-    <link rel="stylesheet" href="scss/nav.css">
-    <link rel="stylesheet" href="scss/include/home.css">
+    <link rel="stylesheet" href="scss/custom.css" />
+    <link rel="stylesheet" href="scss/nav.css" />
+    <link rel="stylesheet" href="scss/include/home.css" />
     <!-- Icon -->
-        <link rel="icon" href="https://instagram.fcgp3-1.fna.fbcdn.net/v/t51.2885-15/e35/118712841_171510214510702_8902140143671495046_n.jpg?_nc_ht=instagram.fcgp3-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=eHW4qBrnkscAX_dh3Xi&tp=1&oh=9226973390f2b2c3c4c921ae4b2bf4ba&oe=601B2736">
-</head>
-<body class="">
+    <link
+      rel="icon"
+      href="https://instagram.fcgp3-1.fna.fbcdn.net/v/t51.2885-15/e35/118712841_171510214510702_8902140143671495046_n.jpg?_nc_ht=instagram.fcgp3-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=eHW4qBrnkscAX_dh3Xi&tp=1&oh=9226973390f2b2c3c4c921ae4b2bf4ba&oe=601B2736"
+    />
+    <!-- React -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="src/nav.js"></script>
+    <script type="text/babel" src="src/footer.js"></script>
+  </head>
+  <body class="">
     <!-- Navigation -->
     <!-- ======================= -->
-    <div class="navigation position-fixed w-100">
-        <nav class="navbar navbar-expand-lg glass navbar-light" id="navbar">
-            <div class="container">
-              <a class="navbar-brand" href="#">Israk</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <svg class="ham ham6" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-                    <path
-                          class="line top"
-                          d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
-                    <path
-                          class="line middle"
-                          d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
-                    <path
-                          class="line bottom"
-                          d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
-                  </svg>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <div class="mx-auto"></div>
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link"href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Portfolio
-                    </a>
-                    <ul class="dropdown-menu glass" id="d-m" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" id="d-i" href="https://mdyaserarafatisrak.artstation.com/albums/2855151">Personal Art</a></li>
-                      <li><a class="dropdown-item" id="d-i" href="https://mdyaserarafatisrak.artstation.com/albums/2815097">Portrait</a></li>
-                      <li><a class="dropdown-item" id="d-i" href="https://mdyaserarafatisrak.artstation.com/albums/2855151">Character Design</a></li>
-                      <li><a class="dropdown-item" id="d-i" href="https://www.behance.net/israk">Graphic Design</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact">Contact</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Theme
-                    </a>
-                    <ul class="dropdown-menu glass" id="d-mm" aria-labelledby="navbarDropdownMenuLink">
-                        <li><button class="dropdown-item" id="d-i" onclick="glass()">Glass Morphism</button></li>
-                        <li><button class="dropdown-item" id="d-i" onclick="dark()">Dark</button></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </div>
+    <div class="navigation position-fixed w-100"></div>
     <!-- Navigation End-->
     <!-- ======================= -->
-
-    <!-- Section1 Intro-->
-    <!-- ======================= -->
-    <section class="section1">
-        <div class="black-cover glass position-absolute top-50 start-50 translate-middle" id="black-cover"></div>
+    <main>
+      <!-- Section1 Intro-->
+      <!-- ======================= -->
+      <section class="section1">
+        <div
+          class="black-cover glass position-absolute top-50 start-50 translate-middle"
+          id="black-cover"
+        ></div>
         <div class="intro position-absolute top-50 start-50 translate-middle">
-            <h1 class="text-white">ISRAK</h1>
+          <h1 class="text-white">ISRAK</h1>
         </div>
-    </section>    
-    <!-- Section1 Intro End-->
-    <!-- ======================= -->
+      </section>
+      <!-- Section1 Intro End-->
+      <!-- ======================= -->
 
-    <!-- Section2 Portfolio -->
-    <!-- ============================ -->
-    <section class="section2 home-sec2">
+      <!-- Section2 Portfolio -->
+      <!-- ============================ -->
+      <section class="section2 home-sec2">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <div class="art-img glass position-relative top-50 translate-middle-y">
-                        <a href="https://mdyaserarafatisrak.artstation.com/albums/2824156" class="sec2-link text-white">Personal art</a>
-                        <img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/033/872/896/large/md-yaser-arafat-israk-md-yaser-arafat-israk-asset.jpg?1610785930">
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="art-img glass position-relative top-50 translate-middle-y">
-                        <a href="https://mdyaserarafatisrak.artstation.com/albums/2815097" class="sec2-link text-white">Portrait</a>
-                        <img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/033/769/407/large/md-yaser-arafat-israk-asset.jpg?1610518760">
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="art-img glass position-relative top-50 translate-middle-y">
-                        <a href="https://mdyaserarafatisrak.artstation.com/albums/2855151" class="sec2-link text-white">Character Design</a>
-                        <img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/032/560/824/large/md-yaser-arafat-israk-asset.jpg?1606810395">
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <div
+                class="art-img glass position-relative top-50 translate-middle-y"
+              >
+                <a
+                  href="https://mdyaserarafatisrak.artstation.com/albums/2824156"
+                  class="sec2-link text-white"
+                  >Personal art</a
+                >
+                <img
+                  class="img-fluid"
+                  src="https://cdna.artstation.com/p/assets/images/images/033/872/896/large/md-yaser-arafat-israk-md-yaser-arafat-israk-asset.jpg?1610785930"
+                />
+              </div>
             </div>
+            <div class="col-md-4 text-center">
+              <div
+                class="art-img glass position-relative top-50 translate-middle-y"
+              >
+                <a
+                  href="https://mdyaserarafatisrak.artstation.com/albums/2815097"
+                  class="sec2-link text-white"
+                  >Portrait</a
+                >
+                <img
+                  class="img-fluid"
+                  src="https://cdnb.artstation.com/p/assets/images/images/033/769/407/large/md-yaser-arafat-israk-asset.jpg?1610518760"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div
+                class="art-img glass position-relative top-50 translate-middle-y"
+              >
+                <a
+                  href="https://mdyaserarafatisrak.artstation.com/albums/2855151"
+                  class="sec2-link text-white"
+                  >Character Design</a
+                >
+                <img
+                  class="img-fluid"
+                  src="https://cdna.artstation.com/p/assets/images/images/032/560/824/large/md-yaser-arafat-israk-asset.jpg?1606810395"
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <button class="more-btn position-relative start-50 translate-middle-x">
-            <a href="https://mdyaserarafatisrak.artstation.com">MORE</a>
+          <a href="https://mdyaserarafatisrak.artstation.com">MORE</a>
         </button>
-    </section>
-    <!-- Section2 Portfolio end-->
-    <!-- ============================ -->
+      </section>
+      <!-- Section2 Portfolio end-->
+      <!-- ============================ -->
 
-    <!-- Section2 work-->
-    <!-- ============================ -->
-    <section class="section3 home-sec3" id="work">
+      <!-- Section2 work-->
+      <!-- ============================ -->
+      <section class="section3 home-sec3" id="work">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <div class="row">
-                        <div class="col-6">
-                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/e0613a109150993.5fcdbe0634014.jpg" alt="" class="img-fluid m-2">
-                        </div>
-                        <div class="col-6">
-                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/a497e0111044629.5ffac9e881a91.jpg" alt="" class="img-fluid m-2">
-                        </div>
-                        <div class="col-6">
-                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/152ba3111040171.5ffaa66274dff.jpg" alt="" class="img-fluid m-2">
-                        </div>
-                        <div class="col-6">
-                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/b07abb111040087.5ffaa593bddf8.jpg" alt="" class="img-fluid m-2">
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <div class="row">
+                <div class="col-6">
+                  <img
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/e0613a109150993.5fcdbe0634014.jpg"
+                    alt=""
+                    class="img-fluid m-2"
+                  />
                 </div>
-                <div class="col-md-6">
-                    <div class="info position-relative top-50 start-50 translate-middle">
-                        <h1>Web Designer</h1>
-                        <p>I'm also a <b>Web Designer</b> and <b>Graphic    Designer</b></p>
-                        <div class="sec3-link">
-                            <i class="fas fa-check-circle"></i>
-                            <a href="https://yaserisrak.netlify.    app">https://yaserisrak.netlify.app</a>
-                                <br>
-                            <i class="fas fa-check-circle"></i>
-                            <a href="https://sma-hamid.netlify.app">https://sma-hamid.netlify.app</a>
-                                <br>
-                            <i class="fas fa-check-circle"></i>
-                            <a href="http://forecomerce.epizy.com">http://  forecomerce.epizy.com</a>
-                                <br>
-                        </div>
-                        <button class="more-btn">
-                            <a href="https://www.behance.net/israk">MORE</a>
-                        </button>
-                    </div>
+                <div class="col-6">
+                  <img
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/a497e0111044629.5ffac9e881a91.jpg"
+                    alt=""
+                    class="img-fluid m-2"
+                  />
                 </div>
+                <div class="col-6">
+                  <img
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/152ba3111040171.5ffaa66274dff.jpg"
+                    alt=""
+                    class="img-fluid m-2"
+                  />
+                </div>
+                <div class="col-6">
+                  <img
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/b07abb111040087.5ffaa593bddf8.jpg"
+                    alt=""
+                    class="img-fluid m-2"
+                  />
+                </div>
+              </div>
             </div>
+            <div class="col-md-6">
+              <div
+                class="info position-relative top-50 start-50 translate-middle"
+              >
+                <h1>Web Designer</h1>
+                <p>
+                  I'm also a <b>Web Designer</b> and <b>Graphic Designer</b>
+                </p>
+                <div class="sec3-link">
+                  <i class="fas fa-check-circle"></i>
+                  <a href="https://yaserisrak.netlify.    app"
+                    >https://yaserisrak.netlify.app</a
+                  >
+                  <br />
+                  <i class="fas fa-check-circle"></i>
+                  <a href="https://sma-hamid.netlify.app"
+                    >https://sma-hamid.netlify.app</a
+                  >
+                  <br />
+                  <i class="fas fa-check-circle"></i>
+                  <a href="http://forecomerce.epizy.com"
+                    >http:// forecomerce.epizy.com</a
+                  >
+                  <br />
+                </div>
+                <button class="more-btn">
+                  <a href="https://www.behance.net/israk">MORE</a>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- Section2 work end-->
-    <!-- ============================ -->
+      </section>
+      <!-- Section2 work end-->
+      <!-- ============================ -->
+    </main>
 
     <!-- Footer-->
     <!-- ============================ -->
-    <footer>
-        <div class="container">
-            <div class="social-icon text-center">
-                <a href="https://www.facebook.com/yaser.arafat.israk"><i class="fab fa-facebook-f text-white"></i></a>
-                <a href="https://www.instagram.com/_yaser.israk_"><i class="fab fa-instagram text-white"></i></a>
-                <a href="https://www.linkedin.com/in/israk"><i class="fab fa-linkedin-in text-white"></i></a>
-                <a href="https://www.youtube.com/channel/UC1gsOgkQq6EvgL-IP8QeHnQ?view_as=subscriber"><i class="fab fa-youtube text-white"></i></a>
-            </div>
-            <div class="credit text-center">
-                Copyright ©2021 Israk . All rights reserved.
-            </div>
-        </div>
-    </footer>
+    <footer></footer>
     <!-- Footer end-->
     <!-- ============================ -->
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

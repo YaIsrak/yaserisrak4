@@ -11427,6 +11427,7 @@ footer .container .social-icon i {
   line-height: 5vmin;
   background-color: #0e0e0e !important;
   border-radius: 100%;
+  margin: 0 5px;
 }
 
 footer .container .credit {
