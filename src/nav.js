@@ -1,25 +1,26 @@
-// variable
-let navbar = document.getElementById("navbar");
-let blackCover = document.getElementById("black-cover");
-let work = document.getElementById("work");
-let aboutIntro = document.getElementById("about-intro");
-let insta = document.getElementById("insta");
-let photos = document.getElementById("photos");
-let workWith = document.getElementById("work-with");
-
 // Render
 class Nav extends React.Component {
-  navbar = document.getElementById("navbar");
-  glass = () => {
-    console.log("hello");
+  state = {
+    hum: false,
   };
-  dark = () => {
-    navbar.classList.toggle("bg-dark");
-    console.log("dark");
+
+  hum = () => {
+    this.setState({
+      hum: true,
+      hum: !this.state.hum,
+    });
+    console.log(this.state.hum);
   };
+
   render() {
+    let classes = "";
+    if (this.state.hum === true) {
+      classes = " active";
+    }
+
     return (
       <nav class="navbar navbar-expand-lg glass navbar-light" id="navbar">
+        {/* // <nav className={classes} id="navbar"> */}
         <div class="container">
           <a class="navbar-brand" href="#">
             Israk
@@ -34,10 +35,10 @@ class Nav extends React.Component {
             aria-label="Toggle navigation"
           >
             <svg
-              class="ham ham6"
+              class={"ham ham6" + classes}
               viewBox="0 0 100 100"
               width="80"
-              onclick="this.classList.toggle('active')"
+              onClick={this.hum}
             >
               <path
                 class="line top"
@@ -124,34 +125,6 @@ class Nav extends React.Component {
                 <a class="nav-link" href="contact">
                   Contact
                 </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href=""
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Theme
-                </a>
-                <ul
-                  class="dropdown-menu glass"
-                  id="d-mm"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <button class="dropdown-item" id="d-i" onClick={this.glass}>
-                      Glass Morphism
-                    </button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" id="d-i" onClick={this.dark}>
-                      Dark
-                    </button>
-                  </li>
-                </ul>
               </li>
             </ul>
           </div>
