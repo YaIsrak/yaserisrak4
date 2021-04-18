@@ -1,68 +1,49 @@
-$primary: #d90d4f;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Theme
 $dark: #0e0e0e;
 
-@import "../bootstrap/scss/bootstrap.scss";
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://use.fontawesome.com/releases/v5.15.1/css/all.css");
-
-// Bootstrap Theme
-// ====================
-
-$theme-colors: (
-  "primary": $primary,
-  "dark": $dark,
-);
-
-// Font
-// =============
-$font1: "Great Vibes", cursive;
-$font2: "Montserrat", sans-serif;
-$font3: "Poppins", sans-serif;
-
-.font1 {
-  font-family: $font1;
-}
-.font2 {
-  font-family: $font2;
-}
-
-// other
-// ==============
 * {
-  transition: 0.2s;
-  transition-timing-function: ease-in-out;
+  transition: 0.3s;
 }
-
-@mixin glass {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+body {
+  font-family: 'Poppins', sans-serif;
 }
-.glass {
-  @include glass;
-}
-
-@mixin more-btn {
-  color: $white;
+.dark-theme {
   background-color: $dark;
-  font-family: $font2;
-  border: none;
-  font-weight: 600;
-  padding: 1vmin 3vmin;
-  letter-spacing: 5px;
-  font-size: 2vmin;
-  margin: 5vmin 0;
-  a {
-    color: $white;
-    text-decoration: none;
-  }
+  color: white;
+}
+.light-theme {
+  background-color: white;
+  color: $dark;
+}
+// Header and Paragraph
+
+// Button
+
+// image{
+img {
+  border-radius: 1rem;
   &:hover {
-    color: $white;
-    background-color: $primary;
-    padding: 1vmin 5vmin;
+    border-radius: 5rem;
   }
 }
-.more-btn {
-  @include more-btn;
+section {
+  padding: 15vmin 0;
+}
+
+// mixin
+@mixin position($position, $top, $left, $t-top, $t-left) {
+  position: $position;
+  top: $top;
+  left: $left;
+  transform: translate($t-left, $t-top);
+}
+.sec-h1 {
+  letter-spacing: 0rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  &:hover {
+    letter-spacing: 0.5rem;
+  }
 }
